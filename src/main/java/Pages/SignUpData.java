@@ -1,10 +1,12 @@
 package Pages;
 
-
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
@@ -13,12 +15,12 @@ public class SignUpData {
 	@DataProvider (name ="signup-data")
 	public static Object[][] getLoginData() throws IOException {
 	    String excelPath = "TestData\\Testdata.xlsx";
-	    String sheetName = "SignUpData";
+	    String sheetName = "src\\main\\java\\Pages\\SignUpData.java";
 	    String[] columnsToRetrieve = {"Username", "Password", "Day", "FirstName"}; // specify column names
 
 	    FileInputStream file = new FileInputStream(excelPath);
 	    XSSFWorkbook workbook = new XSSFWorkbook(file);
-	    Sheet sheet = workbook.getSheet(sheetName);
+	    XSSFSheet sheet = workbook.getSheet(sheetName);
 
 	    int rowCount = sheet.getLastRowNum(); // get last row number
 	    int colCount = columnsToRetrieve.length; // set column count
@@ -28,11 +30,11 @@ public class SignUpData {
 
 	    Object[][] data = new Object[rowCount][colCount];
 
-	    Row headerRow = sheet.getRow(0);
+	    XSSFRow headerRow = sheet.getRow(0);
 	    int[] columnIndex = new int[colCount];
 	    for (int i = 0; i < colCount; i++) {
 	        String columnName = columnsToRetrieve[i];
-	        Cell cell = headerRow.getCell(i);
+	        XSSFCell cell = headerRow.getCell(i);
 
 	        if (cell != null && cell.getCellType() == CellType.STRING) {
 	            String headerCellValue = cell.getStringCellValue();
@@ -43,14 +45,14 @@ public class SignUpData {
 	    }
 
 	    for (int i = 1; i <= rowCount; i++) {
-	        Row row = sheet.getRow(i);
+	        XSSFRow row = sheet.getRow(i);
 
 	        if (row == null) {
 	            continue; // skip null rows
 	        }
 
 	        for (int j = 0; j < colCount; j++) {
-	            Cell cell = row.getCell(columnIndex[j]);
+	            XSSFCell cell = row.getCell(columnIndex[j]);
 
 	            switch (cell.getCellType()) {
 	                case STRING:

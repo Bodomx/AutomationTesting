@@ -11,7 +11,7 @@ public class ValidationsFactory extends Controler {
 	    
 		public ValidationsFactory(WebDriver driver, SignUp Page) {     //, By enterEmail)         
 	    	this.driver = driver;
-	    	this.setPage(Page);
+	    	this.Page = Page;
 	    	PageFactory.initElements(driver, Page);
 	    }
 		
