@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>MavenApp</groupId>
   <artifactId>AutomationTest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -13,31 +13,31 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.16.1</version>
+      <version>4.16.2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.7.0</version>
+      <version>7.7.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-chrome-driver</artifactId>
-      <version>4.16.1</version>
+      <version>4.16.2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.2.3</version>
+      <version>5.2.4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>5.2.3</version>
+      <version>5.2.4</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
@@ -81,39 +81,39 @@
       </testResource>
     </testResources>
     <directory>C:\Users\larry\Tools\PracticeApp\AutomationTest\target</directory>
-    <finalName>AutomationTest-0.0.1-SNAPSHOT</finalName>
+    <finalName>AutomationTest-0.0.2-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.0.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M7</version>
+          <version>3.0.0-M8</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.10.1</version>
+          <version>3.10.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <id>default-clean</id>
@@ -126,7 +126,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
         <executions>
           <execution>
             <id>default-testResources</id>
@@ -146,7 +146,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <id>default-jar</id>
@@ -159,7 +159,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.10.2</version>
         <executions>
           <execution>
             <id>default-compile</id>
@@ -179,7 +179,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M7</version>
+        <version>3.0.0-M8</version>
         <executions>
           <execution>
             <id>default-test</id>
@@ -192,7 +192,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-install-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.2</version>
         <executions>
           <execution>
             <id>default-install</id>
@@ -200,22 +200,12 @@
             <goals>
               <goal>install</goal>
             </goals>
-            <configuration>
-              <suiteXmlFiles>
-                <suiteXmlFile>testng.xml</suiteXmlFile>
-              </suiteXmlFiles>
-            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.2</version>
         <executions>
           <execution>
             <id>default-deploy</id>
@@ -228,7 +218,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.12.1</version>
+        <version>3.12.2</version>
         <executions>
           <execution>
             <id>default-site</id>
@@ -236,15 +226,6 @@
             <goals>
               <goal>site</goal>
             </goals>
-            <configuration>
-              <outputDirectory>C:\Users\larry\Tools\PracticeApp\AutomationTest\target\site</outputDirectory>
-              <reportPlugins>
-                <reportPlugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-project-info-reports-plugin</artifactId>
-                </reportPlugin>
-              </reportPlugins>
-            </configuration>
           </execution>
           <execution>
             <id>default-deploy</id>
@@ -252,26 +233,8 @@
             <goals>
               <goal>deploy</goal>
             </goals>
-            <configuration>
-              <outputDirectory>C:\Users\larry\Tools\PracticeApp\AutomationTest\target\site</outputDirectory>
-              <reportPlugins>
-                <reportPlugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-project-info-reports-plugin</artifactId>
-                </reportPlugin>
-              </reportPlugins>
-            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <outputDirectory>C:\Users\larry\Tools\PracticeApp\AutomationTest\target\site</outputDirectory>
-          <reportPlugins>
-            <reportPlugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-project-info-reports-plugin</artifactId>
-            </reportPlugin>
-          </reportPlugins>
-        </configuration>
       </plugin>
     </plugins>
   </build>
