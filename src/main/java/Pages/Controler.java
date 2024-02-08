@@ -45,7 +45,7 @@ public void config() {
 	
 AppUrl = "https://automationexercise.com/";
 options = new ChromeOptions();
-options.addArguments("--headless=new");
+//options.addArguments("--headless=new");
 
 //Ex = new WebDriverWait(driver,15);
 driver = new ChromeDriver(options);
