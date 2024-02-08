@@ -1,0 +1,5 @@
+pom.xml
+testng.xml
+/target/
+/reports/
+/test-output/
