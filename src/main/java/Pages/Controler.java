@@ -2,6 +2,7 @@ package Pages;
 
 import java.awt.AWTException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -67,7 +68,7 @@ form = new SignUp(driver);
 @BeforeClass
  public void Synchronize() {
 	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 	
 	act = new Actions(driver);
 }

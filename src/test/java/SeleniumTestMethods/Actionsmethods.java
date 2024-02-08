@@ -3,6 +3,7 @@ package SeleniumTestMethods;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,9 +13,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class Actionsmethods extends Controller {
+import Pages.Controler;
+
+public class Actionsmethods extends Controler {
 	
 	@Test(priority = 0)
 	public void actionset1() throws InterruptedException {
@@ -33,7 +35,7 @@ public class Actionsmethods extends Controller {
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); // implicit wait
 
-		Ex = new WebDriverWait(driver, 30); // explicit wait
+		//Ex = new WebDriverWait(driver, 30); // explicit wait
 		
 		driver.findElement(By.id("divpaxinfo")).click(); Thread.sleep(1000);
 		
