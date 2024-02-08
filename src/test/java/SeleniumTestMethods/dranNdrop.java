@@ -9,9 +9,10 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class dranNdrop extends Controller {
+import Pages.Controler;
+
+public class dranNdrop extends Controler {
 
 	
 	@Test(priority =0)

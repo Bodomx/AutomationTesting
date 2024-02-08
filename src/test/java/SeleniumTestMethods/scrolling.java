@@ -4,9 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class scrolling extends Controller {
+import Pages.Controler;
+
+public class scrolling extends Controler {
 
 	 
 

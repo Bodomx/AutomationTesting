@@ -3,9 +3,10 @@ package SeleniumTestMethods;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class uploadfile extends Controller {
+import Pages.Controler;
+
+public class uploadfile extends Controler {
 	@Test
 	public void upload() throws InterruptedException {
 		driver.get("http://demo.guru99.com/test/upload/");

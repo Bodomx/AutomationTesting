@@ -3,9 +3,10 @@ package SeleniumTestMethods;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class Alerts extends Controller {
+import Pages.Controler;
+
+public class Alerts extends Controler {
 
 	
 	@Test(priority = 0)

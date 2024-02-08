@@ -14,9 +14,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class screenshot extends Controller  {
+import Pages.Controler;
+
+public class screenshot extends Controler  {
 	public final String DRIVER_PATH = "Drivers/chromedriver";
     public final String DRIVER_TYPE = "webdriver.chrome.driver";
    // public WebDriver driver;

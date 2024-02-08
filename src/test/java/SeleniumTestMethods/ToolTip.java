@@ -6,9 +6,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class ToolTip extends Controller {
+import Pages.Controler;
+
+public class ToolTip extends Controler {
 @Test(priority = 0)
 	public void tooltip1() throws InterruptedException {
 	

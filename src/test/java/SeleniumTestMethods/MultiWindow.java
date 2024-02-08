@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class MultiWindow extends Controller{
+import Pages.Controler;
+
+public class MultiWindow extends Controler{
 	@Test(priority = 0)
 	public void multiwindow() throws InterruptedException {
 			

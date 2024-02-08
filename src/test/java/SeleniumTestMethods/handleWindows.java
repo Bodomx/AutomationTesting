@@ -9,9 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class handleWindows extends Controller {
+import Pages.Controler;
+
+public class handleWindows extends Controler {
 	@Test
 	public void window() throws InterruptedException {
 		// TODO Auto-generated method stub

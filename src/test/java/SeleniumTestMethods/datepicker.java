@@ -10,9 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class datepicker extends Controller{
+import Pages.Controler;
+
+public class datepicker extends Controler{
 	@Test(priority = 0)
 
     public void testDAtePicker() throws Exception{

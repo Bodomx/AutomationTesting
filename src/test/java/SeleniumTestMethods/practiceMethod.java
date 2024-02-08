@@ -1,17 +1,21 @@
 package SeleniumTestMethods;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class practiceMethod extends Controller {
+import Pages.Controler;
+
+public class practiceMethod extends Controler {
 
 @Test(priority = 0)
 			public void simplerun() throws InterruptedException {
@@ -22,7 +26,7 @@ public class practiceMethod extends Controller {
 			       
 				 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jzo_0\\eclipse-workspace\\SElenium_3\\chromedriver-windows.exe");
 				 
-				 WebDriverWait Ex =new WebDriverWait(driver, 5);
+	Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));;
 
 				 String url1 = "https://automationexercise.com/";	
 				 

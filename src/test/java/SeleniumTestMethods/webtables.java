@@ -9,9 +9,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class webtables extends Controller {
+import Pages.Controler;
+
+public class webtables extends Controler {
 	@Test(priority = 0)
 	public  void webtab1() throws ParseException {
 		// TODO Auto-generated method stub

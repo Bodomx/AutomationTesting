@@ -3,9 +3,10 @@ package SeleniumTestMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import Central.Controller;
 
-public class Frames extends Controller {
+import Pages.Controler;
+
+public class Frames extends Controler {
 	public void frames1() throws InterruptedException {
 		// TODO Auto-generated method stub
 		//WebDriver driver;		   

@@ -7,9 +7,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-import Central.Controller;
 
-public class autosuggest extends Controller {
+import Pages.Controler;
+
+public class autosuggest extends Controler {
 
 	@Test
 	public void autosuggest3() throws Exception {

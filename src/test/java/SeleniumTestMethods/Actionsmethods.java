@@ -3,9 +3,14 @@ package SeleniumTestMethods;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -17,18 +22,14 @@ public class Actionsmethods extends Controler {
     private WebDriverWait wait;
     private Actions action;
 
-    @BeforeMethod
-    public void setup() {
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 30);
-        action = new Actions(driver);
-    }
 
     @Test(priority = 0)
     public void actionset1() {
+    	driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));;
+        action = new Actions(driver);
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         driver.navigate().refresh();
 
