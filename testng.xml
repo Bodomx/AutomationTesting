@@ -5,6 +5,7 @@
     <classes>
       <class name="RunTest.SignUp"/>
       <class name="RunTest.LaunchBrowser"/>
+      
     </classes>
   </test> <!-- RunTest -->
 </suite> <!-- App -->
