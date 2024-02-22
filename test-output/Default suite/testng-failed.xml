@@ -6,12 +6,10 @@
       <class name="SeleniumTestMethods.Actionsmethods">
         <methods>
           <include name="config"/>
-          <include name="actionbuilder"/>
-          <include name="actionset2"/>
-          <include name="validations"/>
           <include name="setup"/>
-          <include name="terminate"/>
+          <include name="validations"/>
           <include name="actionset1"/>
+          <include name="terminate"/>
           <include name="BrowserConfig"/>
           <include name="Synchronize"/>
           <include name="BrowserClosing"/>

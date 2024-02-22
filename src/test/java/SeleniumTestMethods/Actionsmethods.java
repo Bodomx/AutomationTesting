@@ -33,7 +33,7 @@ public class Actionsmethods extends Controler {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         driver.navigate().refresh();
 
-        WebElement addup1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("hrefIncAdt")));
+        WebElement addup1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='hrefIncAdt']")));
         Action seriesOfActions1 = action.moveToElement(addup1).click().build();
 
         for(int i=1;i<10;i++) {

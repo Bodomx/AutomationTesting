@@ -8,4 +8,21 @@
       
     </classes>
   </test> <!-- RunTest -->
+  <test thread-count="5" name="Test-mock" parallel="false"> 
+	  <classes>
+      <class name="SeleniumTestMethods.uploadfile"/>
+      <class name="SeleniumTestMethods.handleWindows"/>
+      <class name="SeleniumTestMethods.scrolling"/>
+      <class name="SeleniumTestMethods.Actionsmethods"/>
+      <class name="SeleniumTestMethods.MultiWindow"/>
+      <class name="SeleniumTestMethods.Alerts"/>
+      <class name="SeleniumTestMethods.autosuggest"/>
+      <class name="SeleniumTestMethods.webtables"/>
+      <class name="SeleniumTestMethods.screenshot"/>
+      <class name="SeleniumTestMethods.datepicker"/>
+      <class name="SeleniumTestMethods.ToolTip"/>
+      <class name="SeleniumTestMethods.practiceMethod"/>
+      <class name="SeleniumTestMethods.dranNdrop"/>
+    </classes>
+  </test> <!-- Test-mock -->
 </suite> <!-- App -->

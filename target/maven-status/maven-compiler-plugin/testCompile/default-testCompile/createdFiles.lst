@@ -1,0 +1,17 @@
+SeleniumTestMethods\screenshot.class
+SeleniumTestMethods\dranNdrop.class
+SeleniumTestMethods\datepicker.class
+SeleniumTestMethods\MultiWindow.class
+SeleniumTestMethods\scrolling.class
+SeleniumTestMethods\Alerts.class
+SeleniumTestMethods\ToolTip.class
+SeleniumTestMethods\uploadfile.class
+RunTest\SignUp.class
+SeleniumTestMethods\webtables.class
+SeleniumTestMethods\handleWindows.class
+SeleniumTestMethods\Frames.class
+RunTest\LaunchBrowser.class
+SeleniumTestMethods\practiceMethod.class
+SeleniumTestMethods\autosuggest.class
+RunTest\SignIn.class
+SeleniumTestMethods\Actionsmethods.class
