@@ -89,7 +89,7 @@ public void validations(){
 @AfterTest()
 public void BrowserClosing() throws InterruptedException, IOException, AWTException {
 	
-    //String testNgReportPath = "test-output\\index.html"; // Replace with the path to your TestNG report
+    String testNgReportPath = "test-output\\index.html"; // Replace with the path to your TestNG report
 
     //File reportFile = new File(testNgReportPath);
     //if (!reportFile.exists()) {
