@@ -13,6 +13,7 @@ public class ValidationsFactory extends Controler {
 	    	this.driver = driver;
 	    	this.Page = Page;
 	    	PageFactory.initElements(driver, Page);
+			// adding Commnets
 	    }
 		
 		
