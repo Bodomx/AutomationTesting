@@ -30,7 +30,7 @@ public class Actionsmethods extends Controler {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));;
         action = new Actions(driver);
-        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.get("https://www.spicejet.com/");
         driver.navigate().refresh();
 
         WebElement addup1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='hrefIncAdt']")));
